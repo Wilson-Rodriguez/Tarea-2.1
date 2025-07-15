@@ -1,0 +1,14 @@
+### Lista todas las categorias
+GET http://localhost:3000/categorias
+
+### Obtiene una categoria por ID
+GET http://localhost:3000/categorias/:id
+
+### Crea una nueva categoria
+POST http://localhost:3000/categorias
+
+### Edita una categoria existente
+PUT http://localhost:3000/:id
+
+### Elimina una categoria por ID
+DELETE http://localhost:3000/:id
