@@ -1,12 +1,12 @@
 import express from 'express'
-import productosRoutes from './routes/productos.router.js'
+import categoriasRouter from './routes/categorias.router.js'
 
 const app = express()
 
 const PORT = process.env.PORT || 3000
 app.use(express.json())
 
-app.use('/categorias', productosRoutes)
+app.use('/categorias', categoriasRouter)
 
 app.use((req, res) => {
     res.status(404).json(
