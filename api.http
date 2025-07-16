@@ -6,6 +6,11 @@ GET http://localhost:3000/categorias/4
 
 ### Crea una nueva categoria
 POST http://localhost:3000/categorias
+Content-Type: application/json
+
+{
+    "nombre": "Limpieza"
+}
 
 ### Edita una categoria existente
 PUT http://localhost:3000/:id

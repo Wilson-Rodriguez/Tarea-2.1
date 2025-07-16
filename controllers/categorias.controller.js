@@ -1,4 +1,4 @@
-import {obtenerCategoriasDB, obtenerCategoriasIDDB} from '../model/categorias.modelo.js'
+import {obtenerCategoriasDB, obtenerCategoriasIDDB, insertarCategoriasDB} from '../model/categorias.modelo.js'
 
 
 export const getAll = async (req, res) => {
@@ -11,4 +11,9 @@ export const getID = async (req, res) => {
     const parsedID = Number(id)
     const categoriasID = await obtenerCategoriasIDDB(parsedID)
     console.log(categoriasID)
+}
+
+export const insertCategory = async (req, res) => {
+    const {nombre} = req.body
+    const insertar = await insertarCategoriasDB(nombre)
 }

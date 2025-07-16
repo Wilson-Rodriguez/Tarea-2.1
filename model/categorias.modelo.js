@@ -11,3 +11,9 @@ export const obtenerCategoriasIDDB = async (id) => {
     const [results] = await pool.query(query, [id])
     return results
 }
+
+export const insertarCategoriasDB = async (categoria) => {
+    const query = 'insert into categorias(nombre) values (?)'
+    const results = await pool.query(query, [categoria])
+    return results
+}
