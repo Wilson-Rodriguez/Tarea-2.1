@@ -2,7 +2,7 @@
 GET http://localhost:3000/categorias
 
 ### Obtiene una categoria por ID
-GET http://localhost:3000/categorias/:id
+GET http://localhost:3000/categorias/4
 
 ### Crea una nueva categoria
 POST http://localhost:3000/categorias
