@@ -2,7 +2,8 @@ import {
     obtenerCategoriasDB,
     obtenerCategoriasIDDB,
     insertarCategoriasDB,
-    actualizarCategoriasDB
+    actualizarCategoriasDB,
+    borrarCategoriaDB
 } from '../model/categorias.modelo.js'
 
 
@@ -29,4 +30,11 @@ export const updateCategory = async (req, res) => {
 
     const parsedID = Number(id)
     const actualizar = await actualizarCategoriasDB(parsedID, nombre)
+}
+
+export const deleteCategory = async (req, res) => {
+    const {id} = req.params
+    const parsedID = Number(id)
+
+    const borrar = await borrarCategoriaDB(id)
 }

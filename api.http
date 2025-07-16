@@ -21,4 +21,4 @@ Content-Type: application/json
 }
 
 ### Elimina una categoria por ID
-DELETE http://localhost:3000/:id
+DELETE http://localhost:3000/categorias/6

@@ -23,3 +23,9 @@ export const actualizarCategoriasDB = async (id, categoriaNueva) => {
     const results = await pool.query(query, [categoriaNueva, id])
     return results
 }
+
+export const borrarCategoriaDB = async (id) => {
+    const query = 'delete from categorias where id = ?'
+    const results = await pool.query(query, [id])
+    return results
+}
