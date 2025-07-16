@@ -13,7 +13,12 @@ Content-Type: application/json
 }
 
 ### Edita una categoria existente
-PUT http://localhost:3000/:id
+PUT http://localhost:3000/categorias/6
+Content-Type: application/json
+
+{
+    "nombre": "Electrodomestico"
+}
 
 ### Elimina una categoria por ID
 DELETE http://localhost:3000/:id
